@@ -1,3 +1,8 @@
+/*Implement the problem of moving all zeroes to the end of array. 
+Statement: Given an array of random numbers, Push all the zeroes of a 
+given array to the end of the array.*/
+
+
 #include<iostream>
 using namespace std;
 
@@ -70,7 +75,27 @@ int main() {
     for (int i = 0; i < size; i++) {
         cout << a[i] << " ";
     }
+
     cout << endl;
 
     return 0;
 }
+
+
+ /*
+Output:-
+PS C:\ADSA LAB> g++ Assignment_2.cpp
+PS C:\ADSA LAB> ./a  
+Enter ARRAY size: 6
+Enter ARRAY elements:
+Enter 1 Element: 5
+Enter 2 Element: 0
+Enter 3 Element: 2
+Enter 4 Element: 5
+Enter 5 Element: 4
+Enter 6 Element: 0
+
+Sorted ARRAY in Descending Order:
+5 5 4 2 0 0 
+PS C:\ADSA LAB> 
+*/
