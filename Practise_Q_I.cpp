@@ -31,3 +31,17 @@ int main(){
     cout<<"The samllet value is :- "<<a[low];
   
 }
+
+
+/*
+Output :-PS C:\TY-SEM-I\ADSA LAB> g++ Practise_Q_I.cpp
+PS C:\TY-SEM-I\ADSA LAB> ./a
+Enter Size Of array: 5
+Enter Data:         
+3
+4
+5
+1
+2
+The samllet value is :- 1
+*/
