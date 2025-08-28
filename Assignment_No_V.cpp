@@ -1,3 +1,13 @@
+/*
+
+Implement a problem of activity selection problem with K persons.
+Statement: Given two arrays S[] and E[] of size N denoting starting and closing time 
+of the shops and an integer value K denoting the number of people, the task is to find
+out the maximum n umber of shops they can visit in total if they visit each shop 
+optimally based on the following conditions:
+
+*/
+
 #include<iostream>
 using namespace std;
     int TotalShop;
@@ -105,3 +115,4 @@ int main(){
 
      
 }
+
