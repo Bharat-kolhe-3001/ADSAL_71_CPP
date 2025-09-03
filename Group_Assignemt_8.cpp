@@ -7,12 +7,11 @@ int main(){
 
     int count=0,sum=0;
 
-    cout<<"Enter The Task length:- ";
+    cout<<"Enter the number of tasks: ";
     cin>>length;
 
-
     for(int i=0;i<length;i++){
-        cout<<"Enter "<<i+1<<" Task:- ";
+        cout<<"Enter Task "<<i+1<<": ";
         cin>>task[i];
     }
 
@@ -30,7 +29,7 @@ int main(){
         cout<<task[i]<<"\n";
     }
          
-    cout<<"Enter The Total Time:- ";
+    cout<<"Enter the total available time: ";
     cin>>total;
 
     for(int i=0;i<length;i++){
@@ -44,6 +43,6 @@ int main(){
         }
     }
 
-    cout<<"Max Task We Do Is:- "<<count<<endl;
+    cout<<"Maximum number of tasks we can complete: "<<count<<endl;
 
 }
