@@ -1,107 +1,65 @@
-#include<iostream>
+/*
+
+Implement a problem of activity selection problem with K persons. 
+Statement: Given two arrays S[] and E[] of size N denoting starting and 
+closing time of the shops and an integer value K denoting the number 
+of people, the task is to find out the maximum number of shops they 
+can visit in total if they visit each shop optimally based on the following 
+conditions:
+  A shop can be visited by only one person.
+  A person cannot visit another shop if its timing collides with it.
+
+*/
+
+#include <iostream>
 using namespace std;
-    int TotalShop;
-    int startingtime[20];
-    int endingtime[20];
-    int calculatemin[20];
 
-    int visitedtime[20];
-    int visitedstartingtime[20];
-int set0(){
-    
-      for(int i=0;i<TotalShop;i++){
-            visitedstartingtime[i]=0;
-            visitedtime[i]=0;
+int main() {
+    int N;
+    cout << "Enter number of days: ";
+    cin >> N;
 
-    }
+    int arr[50];
 
-}
-
-int mintimefunc(){
-      int mintime=9999;
-     int posmintime=-1;
-     
-     for(int i=0;i<TotalShop;i++){
-          if(visitedtime[i]!=0){
-                
-                if(startingtime[i]<mintime){
-                 mintime=startingtime[i];
-                 posmintime++;
-          }
-          }
-         
-     }
-    if(posmintime!=-1){
-       visitedtime[posmintime]=0;
-    }
-     
-
-     return mintime;
-}
-
-
-int minstartingstimefunc(){
-  
-     
-    int minstartingtime=9999;
-    int posminstarting=0;
-
-     for(int i=0;i<TotalShop;i++){
-
-           if(visitedstartingtime[i]!=0){
-          if(startingtime[i]<minstartingtime){ 
-           
-            minstartingtime=calculatemin[i];
-            posminstarting++;
-          }
-     }
-     }
-
-     visitedtime[posminstarting]=0;
-
-     return minstartingtime;
-}
-
-int main(){
    
-    int Employee;
-     cout<<"Enter Total Shop";
-     cin>>TotalShop;
-
-    for(int i=0;i<TotalShop;i++){
-        cout<<"Enter Starting Time For Shop No "<<i<<" :-";
-        cin>>startingtime[i];
+    for (int i = 0; i < N; i++) {
+        cout << "Enter price on day " << i + 1 << ": ";
+        cin >> arr[i];
     }
 
-     for(int i=0;i<TotalShop;i++){
-        cout<<"Enter Ending Time For Shop No "<<i<<" :-";
-        cin>>startingtime[i];
+    int minPrice = arr[0];  
+    int maxProfit = 0;      
+
+    for (int i = 1; i < N; i++) {
+        int profit = arr[i] - minPrice;
+        if (profit > maxProfit) {
+            maxProfit = profit;
+        }
+        if (arr[i] < minPrice) {
+            minPrice = arr[i];
+        }
     }
-     
-    cout<<"Enter No of Employee";
-    cin>>Employee;
-     
-    for(int i=0;i<TotalShop;i++){
-         calculatemin[i]=endingtime[i]-startingtime[i];
-    }
-     
-    set0(); 
 
-    int startvisit=0;
-    int startimployee=1;
-    while(startvisit<TotalShop){
-     
-       int minstarting = minstartingstimefunc();
-       int mintime = mintimefunc();
-      cout<<"Employee No "<<startimployee<<" Starting Time is "<<startingtime<<" And Ending Time Is"<< endingtime[minstarting]<<" \n";
-       
-      if(startimployee=Employee){
-          startimployee=1;
+    cout << "Maximum Profit = " << maxProfit << endl;
 
-      }
-       startimployee++;
-       startvisit++;
-     }
-
-     
+    return 0;
 }
+
+/*
+
+Output:-
+
+PS C:\TY-SEM-I\ADSA LAB> g++ Assignment_No_VI.cpp
+PS C:\TY-SEM-I\ADSA LAB> ./a
+Enter number of days: 6
+Enter price on day 1: 7
+Enter price on day 2: 1
+Enter price on day 3: 5
+Enter price on day 4: 3
+Enter price on day 5: 6
+Enter price on day 6: 4
+
+Maximum Profit = 5
+PS C:\TY-SEM-I\ADSA LAB> 
+
+*/
