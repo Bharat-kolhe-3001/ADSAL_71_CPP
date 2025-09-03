@@ -67,3 +67,23 @@ int main() {
 }
 
 
+/*
+
+Output
+
+
+PS C:\TY-SEM-I\ADSA LAB> g++ ASSIGNMENT_NO-V.cpp
+PS C:\TY-SEM-I\ADSA LAB> ./a
+Enter number of shops: 5
+Enter number of persons: 2
+Enter start and end time of shop 1: 1 3
+Enter start and end time of shop 2: 2 10
+Enter start and end time of shop 3: 2 4
+Enter start and end time of shop 4: 3 5
+Enter start and end time of shop 5: 5 6
+
+Maximum shops visited = 4
+
+PS C:\TY-SEM-I\ADSA LAB> 
+
+*/
