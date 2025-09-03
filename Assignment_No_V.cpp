@@ -8,111 +8,62 @@ optimally based on the following conditions:
 
 */
 
-#include<iostream>
+#include <iostream>
 using namespace std;
-    int TotalShop;
-    int startingtime[20];
-    int endingtime[20];
-    int calculatemin[20];
 
-    int visitedtime[20];
-    int visitedstartingtime[20];
-int set0(){
-    
-      for(int i=0;i<TotalShop;i++){
-            visitedstartingtime[i]=0;
-            visitedtime[i]=0;
+int main() {
+    int N, K;
+    cout << "Enter number of shops: ";
+    cin >> N;
 
+    cout << "Enter number of persons: ";
+    cin >> K;
+
+    int start[50], end[50];   
+
+    for (int i = 0; i < N; i++) {
+        cout << "Enter start and end time of shop " << i + 1 << ": ";
+        cin >> start[i] >> end[i];
     }
 
-}
-
-int mintimefunc(){
-      int mintime=9999;
-     int posmintime=-1;
-     
-     for(int i=0;i<TotalShop;i++){
-          if(visitedtime[i]!=0){
-                
-                if(startingtime[i]<mintime){
-                 mintime=startingtime[i];
-                 posmintime++;
-          }
-          }
-         
-     }
-    if(posmintime!=-1){
-       visitedtime[posmintime]=0;
+    for (int i = 0; i < N - 1; i++) {
+        for (int j = i + 1; j < N; j++) {
+            if (end[i] > end[j]) {
+                int temp = end[i];
+                end[i] = end[j];
+                end[j] = temp;
+                temp = start[i];
+                start[i] = start[j];
+                start[j] = temp;
+            }
+        }
     }
-     
 
-     return mintime;
-}
+    int lastEnd[50];
+    for (int i = 0; i < K; i++) {
+        lastEnd[i] = -1; 
+    }
 
+    int count = 0; 
 
-int minstartingstimefunc(){
-  
-     
-    int minstartingtime=9999;
-    int posminstarting=0;
-
-     for(int i=0;i<TotalShop;i++){
-
-           if(visitedstartingtime[i]!=0){
-          if(startingtime[i]<minstartingtime){ 
-           
-            minstartingtime=calculatemin[i];
-            posminstarting++;
-          }
-     }
-     }
-
-     visitedtime[posminstarting]=0;
-
-     return minstartingtime;
-}
-
-int main(){
    
-    int Employee;
-     cout<<"Enter Total Shop";
-     cin>>TotalShop;
-
-    for(int i=0;i<TotalShop;i++){
-        cout<<"Enter Starting Time For Shop No "<<i<<" :-";
-        cin>>startingtime[i];
+    for (int i = 0; i < N; i++) {
+        for (int j = 0; j < K; j++) {
+            if (lastEnd[j] == -1 || start[i] >= lastEnd[j]) {
+                lastEnd[j] = end[i];
+                count++;
+                break; 
+            }
+        }
     }
 
-     for(int i=0;i<TotalShop;i++){
-        cout<<"Enter Ending Time For Shop No "<<i<<" :-";
-        cin>>startingtime[i];
-    }
-     
-    cout<<"Enter No of Employee";
-    cin>>Employee;
-     
-    for(int i=0;i<TotalShop;i++){
-         calculatemin[i]=endingtime[i]-startingtime[i];
-    }
-     
-    set0(); 
+    cout << "Maximum shops visited = " << count << endl;
 
-    int startvisit=0;
-    int startimployee=1;
-    while(startvisit<TotalShop){
-     
-       int minstarting = minstartingstimefunc();
-       int mintime = mintimefunc();
-      cout<<"Employee No "<<startimployee<<" Starting Time is "<<startingtime<<" And Ending Time Is"<< endingtime[minstarting]<<" \n";
-       
-      if(startimployee=Employee){
-          startimployee=1;
+    return 0;
+}
 
-      }
-       startimployee++;
-       startvisit++;
-     }
 
      
 }
+
 
