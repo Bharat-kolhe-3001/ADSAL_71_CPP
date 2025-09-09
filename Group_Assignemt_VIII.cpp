@@ -10,7 +10,7 @@ int main(){
     cout<<"Enter the number of tasks: ";
     cin>>length;
 
-    for(int i=0;i<length;i++){
+    for(int i=0;i<length;i++){ 
         cout<<"Enter Task "<<i+1<<": ";
         cin>>task[i];
     }
@@ -46,3 +46,4 @@ int main(){
     cout<<"Maximum number of tasks we can complete: "<<count<<endl;
 
 }
+
