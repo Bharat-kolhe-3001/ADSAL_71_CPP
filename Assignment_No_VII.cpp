@@ -17,7 +17,7 @@ int main() {
     cin >> N;
 
     cout << "Enter number of days: ";
-    cin >> D;
+    cin >> D; 
 
     int task[50];
     int totalWork = 0;
@@ -70,3 +70,4 @@ Enter work for task 5: 6
 Minimum work per day = 8
 PS C:\TY-SEM-I\ADSA LAB> 
 */
+
