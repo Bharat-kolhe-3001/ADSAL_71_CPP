@@ -14,7 +14,7 @@ using namespace std;
 int main() {
     int N, D;
     cout << "Enter number of tasks: ";
-    cin >> N;
+    cin >> N; 
 
     cout << "Enter number of days: ";
     cin >> D; 
