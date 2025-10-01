@@ -21,7 +21,7 @@ int main(){
                 int temp=task[j];
                 task[j]=task[i];
                 task[i]=temp;
-            }
+            } 
         }
     }
 
