@@ -13,7 +13,7 @@ int main() {
     for(int i = 0; i < n; i++) {
         cin >> coins[i];
     }
-
+ 
 
     cout << "Enter the sum: ";
     cin >> sum;
@@ -36,5 +36,6 @@ int main() {
 
     return 0;
 }
+
 
 
