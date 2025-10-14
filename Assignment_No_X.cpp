@@ -14,7 +14,7 @@ int main() {
     for (int i = 0; i < n; i++) {
         cin >> arr[i];
     }
-
+ 
     int sum;
     cout << "Enter sum to check: ";
     cin >> sum;
