@@ -1,3 +1,8 @@
+/*Implement Coin Change problem. Statement: - Given an integer array 
+of coins [ ] of size N representing different types of currency and an 
+integer sum, The task is to find the number of ways to make sum by 
+using different combinations from coins[].
+*/
 #include <iostream>
 using namespace std;
 
@@ -36,6 +41,7 @@ int main() {
 
     return 0;
 }
+
 
 
 
