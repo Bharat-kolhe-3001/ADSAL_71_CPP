@@ -6,7 +6,7 @@ int main(){
      cout << "Enter Size Of array: ";
     cin >> size;
 
-    cout << "Enter Data:\n";
+    cout << "Enter Data:\n"; 
     for(int i = 0; i < size; i++) {
         cin >> a[i]; 
         
@@ -45,3 +45,4 @@ Enter Data:
 2
 The samllet value is :- 1
 */
+
