@@ -3,6 +3,7 @@ of coins [ ] of size N representing different types of currency and an
 integer sum, The task is to find the number of ways to make sum by 
 using different combinations from coins[].
 */
+
 #include <iostream>
 using namespace std;
 
@@ -45,3 +46,9 @@ int main() {
 
 
 
+/*
+Enter number of coins: 3
+Enter coin values: 1 2 3
+Enter the sum: 4
+Number of ways to make sum 4 = 4
+*/
