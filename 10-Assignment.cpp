@@ -43,3 +43,19 @@ int main() {
     return 0;
 }
 
+/*Output:-
+Enter Number Of elements:-10
+Enter Element:8
+6
+8
+5
+8
+4
+5
+6
+5
+10
+15
+75
+
+*/
