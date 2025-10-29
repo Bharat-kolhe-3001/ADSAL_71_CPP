@@ -10,7 +10,7 @@ class sort {
     public:
     void mergesort(int a[], int lb, int ub) {
         if (lb < ub) { 
-            int mid = (lb + ub) / 2;
+            int mid = (lb + ub) / 2; 
             mergesort(a, lb, mid);
             mergesort(a, mid + 1, ub);
             merge(a, lb, mid, ub);
