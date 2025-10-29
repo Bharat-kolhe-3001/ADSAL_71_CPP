@@ -10,7 +10,7 @@ int main(){
     for(int i = 0; i < size; i++) {
         cin >> a[i]; 
         
-    }
+    } 
    
   int low=0,high=size-1;
   int mid;
@@ -45,5 +45,6 @@ Enter Data:
 2
 The samllet value is :- 1
 */
+
 
 
