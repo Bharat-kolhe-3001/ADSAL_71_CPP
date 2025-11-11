@@ -19,7 +19,7 @@ class sort {
 
     void merge(int a[], int lb, int mid, int ub) {
         int b[20];
-        int i = lb;
+        int i = lb; 
         int j = mid + 1;
         int k = lb;
 
@@ -99,3 +99,4 @@ Sorted ARRAY in Descending Order:
 5 5 4 2 0 0 
 PS C:\ADSA LAB> 
 */
+
