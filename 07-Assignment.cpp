@@ -13,7 +13,7 @@ using namespace std;
 
 int main() {
     int N, D;
-    cout << "Enter number of tasks: "; 
+    cout << "Enter number of tasks: ";  
     cin >> N; 
 
     cout << "Enter number of days: ";
@@ -70,5 +70,6 @@ Enter work for task 5: 6
 Minimum work per day = 8
 PS C:\TY-SEM-I\ADSA LAB> 
 */
+
 
 
