@@ -10,7 +10,7 @@ using namespace std;
 int main() {
     int n;
     cout << "Enter how many trailing zeros are required: ";
-    cin >> n;
+    cin >> n; 
 
     int N = (n * 5) - 1;
     int result;
@@ -40,3 +40,4 @@ int main() {
     }
     return 0;
 }
+
