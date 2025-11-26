@@ -11,6 +11,7 @@ int main(){
         cin >> a[i]; 
         
     } 
+  //set low and high
    
   int low=0,high=size-1;
   int mid;
