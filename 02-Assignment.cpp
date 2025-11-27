@@ -8,6 +8,8 @@ using namespace std;
 
 class sort {
     public:
+
+//merge sort logic
     void mergesort(int a[], int lb, int ub) {
         if (lb < ub) { 
             int mid = (lb + ub) / 2; 
@@ -99,4 +101,5 @@ Sorted ARRAY in Descending Order:
 5 5 4 2 0 0 
 PS C:\ADSA LAB> 
 */
+
 
