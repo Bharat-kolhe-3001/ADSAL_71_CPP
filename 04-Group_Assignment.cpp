@@ -46,8 +46,9 @@ Enter Data:
 5
 1
 2
-The samllet value is :- 1
+The samllet value is : 1
 */
+
 
 
 
