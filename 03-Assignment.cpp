@@ -31,15 +31,16 @@ int main() {
             count++;
             temp = temp / 10;
         }
-
+           
         if (count == n || count == n-1) {
-            cout << "The first number whose factorial has " << n << " trailing zeros is: " << i << endl;
+            cout << "The first number  whose factorial has " << n << " trailing zeros is: " << i << endl;
           
             break;
         }
     }
     return 0;
 }
+
 
 
 
