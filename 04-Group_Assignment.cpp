@@ -1,3 +1,5 @@
+/* Find Smallest Number*/
+
 #include<iostream>
 using namespace std;
 int main(){
@@ -46,6 +48,7 @@ Enter Data:
 2
 The samllet value is :- 1
 */
+
 
 
 
