@@ -24,6 +24,7 @@ pair<int, vector<int>> solveKnapsack(int n, int W, const vector<int>& weight, co
                 option2 = dp[i - 1][cap - weight[i]] + value[i];
             }
             dp[i][cap] = max(option1, option2);
+            
         }
     }
 
@@ -85,3 +86,4 @@ INPUT:-4 7
 Output:-9
 2 2 3
 */
+
