@@ -1,7 +1,7 @@
 /*Capstone Project: Develop and implement a solution for the 
 given problem using dynamic programming approach.
 The project should be coded on a chosen programming platform and 
-all code must be updated and maintained in a GitHub repository for 
+the all code must be updated and maintained in a GitHub repository for 
 version control and collaboration.*/
 
 #include <bits/stdc++.h>
@@ -86,4 +86,5 @@ INPUT:-4 7
 Output:-9
 2 2 3
 */
+
 
