@@ -11,7 +11,7 @@ int main() {
     int n;//accepting number of zeros 
     cout << "Enter how many trailing zeros are required: ";
     cin >> n;      
-    //Declare N 
+    //Declare N for result
     int N = (n * 5) - 1;
     int result;
     
