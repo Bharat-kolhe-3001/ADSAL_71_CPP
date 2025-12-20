@@ -47,7 +47,7 @@ int main(){
  
 
     cout << "The total 0s in this array are: " << count;
-    return 0;
+    return 0;   
 }
 
 
@@ -62,6 +62,8 @@ Enter 2 Element: 0
 Enter 3 Element: 0
 Enter 4 Element: 0
 Enter 5 Element: 0
-The total 0 s in this array are: 4
+The total 0 s in this array are: 4
+
 
 */
+
